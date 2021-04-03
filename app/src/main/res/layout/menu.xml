@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/body"
+    android:background="@color/CP"
+    tools:context=".Menu">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/firstSlide"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/stars"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.blure.complexview.ComplexView
+            android:id="@+id/play"
+            style="@style/parentConstraint"
+            android:layout_width="183dp"
+            android:layout_height="183dp"
+            android:rotation="-540"
+            android:scaleX="0"
+            android:scaleY="0"
+            app:radius="80dp"
+            app:shadow="true"
+            app:shadowAlpha="83"
+            app:shadowColor="#000000"
+            app:shadowSpread="3">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/playBG"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/button_play_1">
+
+                <ImageView
+                    android:id="@+id/playMark"
+                    style="@style/parentConstraint"
+                    android:layout_width="42dp"
+                    android:layout_height="84dp"
+                    android:scaleY="0.666"
+                    android:src="@drawable/button_play_mark_1"
+                    app:layout_constraintHorizontal_bias="0.54" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.blure.complexview.ComplexView>
+
+        <View
+            android:id="@+id/energy1"
+            style="@style/mEnergy"
+            app:layout_constraintCircleRadius="100dp" />
+
+        <View
+            android:id="@+id/energy2"
+            style="@style/mEnergy"
+            app:layout_constraintCircleRadius="140dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/secondSlide"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/mSecondSlide"
+        android:visibility="gone">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/projects"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

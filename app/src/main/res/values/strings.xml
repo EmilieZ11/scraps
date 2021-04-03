@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Scraps</string>
+
+    <!-- Menu -->
+    <string name="tapToExit">Tap again to exit&#8230;</string>
+
+    <!-- My Wi-Fi -->
+    <string name="w1Title">My Wi-Fi</string>
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="CP">#025CBC</color>
+    <color name="CPD">@color/CP</color>
+    <color name="CA">#ECEDEF</color>
+
+    <!-- GLOBAL -->
+    <color name="TP">#00000000</color>
+    <color name="CA_PRESSED">#C0CAD3</color>
+    <color name="CA_ON_CP">@color/CA</color>
+    <color name="CP_ON_CA">@color/CP</color>
+    <color name="shadow_1">#55000000</color>
+
+    <!-- Menu -->
+    <color name="mBouncer">#D2DAEA</color>
+    <color name="mSecondSlide">#AFFFFFFF</color>
+    <color name="mProjectBGHover">#19000000</color>
+    <color name="mProjectText">#111</color>
+    <color name="mProjectBorderBottom">#33000000</color>
+
+    <!-- My Wi-Fi -->
+    <color name="w1Switch1">@color/CA</color>
+</resources>

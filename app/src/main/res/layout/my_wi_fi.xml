@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/body"
+    tools:context=".proj.MyWiFi">
+
+    <androidx.appcompat.widget.Toolbar
+        style="@style/toolbar"
+        app:title="@string/w1Title" />
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/w1IsOn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:checked="false"
+        android:theme="@style/switch1"
+        app:layout_constraintBottom_toBottomOf="@id/toolbar"
+        app:layout_constraintEnd_toEndOf="@id/toolbar"
+        app:layout_constraintTop_toTopOf="@id/toolbar" />
+
+    <View style="@style/tbShadow" />
+</androidx.constraintlayout.widget.ConstraintLayout>
